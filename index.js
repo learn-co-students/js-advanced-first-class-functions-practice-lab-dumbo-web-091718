@@ -18,7 +18,7 @@ const logDriversByHometown = function(drivers, hometown){
 const driversByRevenue = (drivers) => {
   return [...drivers].sort((x, y) => x.revenue - y.revenue);
 };
-
- const driversByName = drivers => {
+//sort by names
+const driversByName = drivers => {
   return [...drivers].sort((x, y) => x.name.localeCompare(y.name));
 }
