@@ -19,7 +19,7 @@ const driversByRevenue = (drivers) => {
   return [...drivers].sort((x, y) => x.revenue - y.revenue);
 };
 //sort by names
-const driversByName = drivers => {
+const driversByName = (drivers) => {
   return [...drivers].sort((x, y) => x.name.localeCompare(y.name));
 }
 //uses the reduce() method to sum the revenue of every driver and return the total
